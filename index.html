@@ -22,7 +22,7 @@ font-family: 'Roboto', sans-serif;
         <nav class="logo-container">
             <a class="logo link" href="/">Web<span class="studio">Studio</span></a>
                 <ul class="list menu-container">
-                    <li><a class="link link-nav" href="./index.html">Studio</a></li>
+                    <li><a class="link link-nav underline" href="./index.html">Studio</a></li>
                     <li><a class="link link-nav" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="link link-nav" href="">Contacts</a></li>
                 </ul>
@@ -39,7 +39,7 @@ font-family: 'Roboto', sans-serif;
     <section class="slider">
         <div class="container">
         <h1 class="first-header">Effective Solutions for Your Business</h1>
-        <button class="button" type="button">Order Service</button>
+        <button class="button" type="button" data-modal-open>Order Service</button>
         </div>
     </section>
     <section class="second-section-container">
@@ -342,5 +342,12 @@ font-family: 'Roboto', sans-serif;
         </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-button" data-modal-close>x</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
     </body>   
     </html>
